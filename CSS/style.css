@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(109, 39, 239)) ;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Logo */
+.logo {
+  display: block;
+  margin: auto;
+  width: 70px;
+  height: 70px;
+}
+
+/* Chat Container */
+.container {
+  border: 2px solid black;
+  max-width: 955px;
+  margin: auto;
+  height: 60vh;
+  padding: 15px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  
+  border-radius: 10px;
+}
+
+/* Messages */
+.message {
+  background-color: gray;
+  width: 24%;
+  padding: 10px;
+  margin: 12px;
+  border: 2px solid black;
+  border-radius: 10px;
+  word-wrap: break-word;
+}
+
+/* Left & Right Alignment */
+.left {
+  float: left;
+  clear: both;
+}
+
+.right {
+  float: right;
+  clear: both;
+}
+
+/* Send Message Container */
+#send-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 980px;
+  width: 100%;
+  margin: auto;
+}
+
+/* Input Field */
+#messageInp {
+  flex: 1;
+  width: 85%;
+  border: 2px solid black;
+  border-radius: 6px;
+  height: 34px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+/* Send Button */
+.btn {
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 6px;
+  height: 34px;
+  background-color: #6d27ef;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #5321b3;
+}
+
+/* Responsive Design */
+
+/* Tablets (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    height: 55vh;
+    padding: 10px;
+  }
+
+  .message {
+    width: 40%; /* Increase message width */
+  }
+
+  #messageInp {
+    width: 80%;
+  }
+}
+
+/* Small Devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .container {
+    height: 50vh;
+    max-width: 90%;
+    padding: 8px;
+  }
+
+  .message {
+    width: 55%;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  #send-container {
+    flex-direction: column;
+  }
+
+  #messageInp {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+/* Very Small Devices (max-width: 325px) */
+@media screen and (max-width: 325px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .container {
+    height: 45vh;
+    padding: 5px;
+  }
+
+  .message {
+    width: 70%;
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  #messageInp {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 14px;
+  }
+}
